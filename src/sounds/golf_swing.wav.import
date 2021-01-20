@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/golf_swing.wav-b70dc90d58ed1a8a68cee7193cb7a832.sample"
+
+[deps]
+
+source_file="res://sounds/golf_swing.wav"
+dest_files=[ "res://.import/golf_swing.wav-b70dc90d58ed1a8a68cee7193cb7a832.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

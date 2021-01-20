@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://shaders/flag_3d.shader" type="Shader" id=1]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/wave_size = 1.0
+shader_param/face_distortion = 0.5
+shader_param/time_scale = Vector2( 0.3, 0 )
+shader_param/uv_offset_scale = Vector2( -0.2, -0.1 )
+
+[sub_resource type="PlaneMesh" id=2]
+material = SubResource( 1 )
+size = Vector2( 3.2, 2 )
+subdivide_width = 32
+subdivide_depth = 32
+
+[sub_resource type="OpenSimplexNoise" id=3]
+
+[sub_resource type="NoiseTexture" id=4]
+noise = SubResource( 3 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 1 )
+shader_param/wave_size = 0.5
+shader_param/face_distortion = 0.5
+shader_param/time_scale = Vector2( 0.3, 0 )
+shader_param/uv_offset_scale = Vector2( -0.2, -0.1 )
+shader_param/uv_offset_texture = SubResource( 4 )
+
+[sub_resource type="CubeMesh" id=6]
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 1, 0.901961, 0.368627, 1 )
+emission_enabled = true
+emission = Color( 0.262745, 0.176471, 0, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[node name="Flag3DScene" type="Spatial"]
+
+[node name="Flag" type="MeshInstance" parent="."]
+transform = Transform( 0.260306, 0.00298237, -0.00226329, -0.00215269, -0.00953437, -0.26015, -0.00306316, 0.260142, -0.00950872, -0.596998, 0.827702, 0.766397 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 5 )
+
+[node name="Flag2" type="MeshInstance" parent="."]
+transform = Transform( 0.260306, 0.00298237, -0.00226329, 0.0021082, 0.0132926, 0.259985, 0.00309394, -0.259977, 0.0132671, -0.596998, 0.827701, 0.766397 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.035735, 0.00460124, 0.000409422, -0.000536998, 0.961037, -0.00237838, -0.000420512, 0.0193311, 0.0357124, -1.01812, 0.154068, 0.762326 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )

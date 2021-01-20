@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+*.aux
+*.log
+*.out
+*.pdf
+src/meshs/Map1.fbx
+*.wav

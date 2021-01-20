@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/space_theme.wav-f532f505102c263d243c36ae8e50dd30.sample"
+
+[deps]
+
+source_file="res://sounds/space_theme.wav"
+dest_files=[ "res://.import/space_theme.wav-f532f505102c263d243c36ae8e50dd30.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

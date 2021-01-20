@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/blub.wav-6a928bbc4cbb20767c839950e392c25a.sample"
+
+[deps]
+
+source_file="res://sounds/blub.wav"
+dest_files=[ "res://.import/blub.wav-6a928bbc4cbb20767c839950e392c25a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
